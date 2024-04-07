@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.page {
+  background: #2e2e2e;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  max-width: 1920px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+/*-----header-----*/
+.header {
+  width: 100%;
+}
+/*-----promo-----*/
+.promo {
+  width: 100%;
+}
+.promo__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+  height: 100dvh;
+}
+/*-----шарик-----*/
+.globe-container,
+.globe {
+  width: 200px;
+  height: 200px;
+}
+.globe-container {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  transform: scale(1.8);
+}
+.globe {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+.globe-worldmap,
+.globe-worldmap-front,
+.globe-worldmap-back,
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+  position: absolute;
+  display: block;
+  margin: 0;
+}
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.globe-worldmap {
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.globe-worldmap-front,
+.globe-worldmap-back {
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 200px;
+  overflow: visible;
+  background-image: url(../images/worldmap.svg);
+  background-repeat: no-repeat;
+}
+.globe-outer-shadow {
+  left: 0;
+  top: 186px;
+  width: 200px;
+  height: 30px;
+  background-image: url(../images/outer_shadow.svg);
+}
+.globe-inner-shadow {
+  background-image: url(../images/inner_shadow.svg);
+}
+
+.globe-worldmap-front {
+  background-position: 0px 0px;
+  animation: textureSpinreverse 8s linear infinite;
+}
+.globe-worldmap-back {
+  background-position: 0px -220px;
+  animation: textureSpin 8s linear infinite;
+}
+
+@keyframes textureSpin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-47.5%);
+  }
+}
+@keyframes textureSpinreverse {
+  from {
+    transform: translateX(-47.5%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/*-----3d text-----*/
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+.logotype1,
+.logotype1:hover,
+.logotype1 div {
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: #337ab7;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 20px 0 20px 26px;
+  line-height: 16px;
+}
+.logotype1 div {
+  display: block;
+}
+.logotype1 b {
+  letter-spacing: 1px;
+  font-size: 44px;
+  color: #1c84d0;
+  -webkit-text-stroke: 1px #bde1ff;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  background: #2e2e2e;
+}
+.logotype1 span {
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  float: right;
+  font-size: 20px;
+  color: #579ee6;
+  line-height: 6px;
+}
+.logotype1:before {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  content: "";
+  border: 8px solid #bde1ff;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+  box-sizing: content-box;
+}
+.logotype1:hover:before {
+  transform: scale(1.1);
+  border: 8px solid #1c84d0;
+}
+@media (max-width: 600px) {
+  .logotype1,
+  .logotype1:hover,
+  .logotype1 div {
+    font-size: 26px;
+    line-height: 6px;
+    margin: 20px 0 20px 20px;
+  }
+  .logotype1 b {
+    font-size: 34px;
+  }
+  .logotype1 span {
+    font-size: 16px;
+    line-height: 4px;
+  }
+  .logotype1:before {
+    top: -9px;
+    border: 6px solid #bde1ff;
+    width: 52px;
+    height: 52px;
+  }
+  .logotype1:hover:before {
+    border: 6px solid #1c84d0;
+  }
+}
