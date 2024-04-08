@@ -405,6 +405,11 @@ button {
   text-transform: uppercase;
   margin-bottom: 140px;
 }
+@media screen and (max-width: 1024px) {
+  .scroll-to-top {
+    display: none;
+  }
+}
 /*-----footer-----*/
 .footer {
   background: linear-gradient(
