@@ -424,6 +424,12 @@ button {
   );
   padding-top: 60px;
   padding-bottom: 40px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
 textarea {
   resize: none;
@@ -789,4 +795,22 @@ textarea {
   .news__inner-scroll::-webkit-scrollbar {
     width: 0;
   }
+}
+/*-----specialists-----*/
+.specialists {
+  width: 100%;
+}
+.specialists__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.specialists__wrapper h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.4;
+  letter-spacing: 0px;
 }
