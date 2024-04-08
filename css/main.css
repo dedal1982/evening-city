@@ -375,7 +375,7 @@ button {
 }
 @media screen and (max-width: 1024px) {
   .nav {
-    height: 0;
+    display: none;
   }
   .nav.active {
     height: fit-content;
@@ -699,6 +699,11 @@ textarea {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.news__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 900px) {
   .news__item-img {
