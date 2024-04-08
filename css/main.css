@@ -61,9 +61,6 @@ button {
 .content-m {
   flex: 1 0 auto;
 }
-.footer {
-  flex: 0 0 auto;
-}
 /*-----header-----*/
 .header {
   width: 100%;
@@ -417,6 +414,7 @@ button {
 }
 /*-----footer-----*/
 .footer {
+  flex: 0 0 auto;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
