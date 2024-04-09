@@ -418,6 +418,17 @@ button {
   }
 }
 /*-----кнопка прокрутки вверх-----*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .scroll-to-top {
   transform: scale(0);
   position: fixed;
@@ -433,6 +444,7 @@ button {
   text-transform: uppercase;
   margin-bottom: 100px;
 }
+
 @media screen and (max-width: 1024px) {
   .scroll-to-top {
     display: none;

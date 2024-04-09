@@ -5,8 +5,11 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.querySelector(".scroll-to-top").style.transform = "scale(1)";
+    document.querySelector(".scroll-to-top").style.animation =
+      "pulse 2s infinite";
   } else {
     document.querySelector(".scroll-to-top").style.transform = "scale(0)";
+    document.querySelector(".scroll-to-top").style.animation = "none";
   }
 }
 
