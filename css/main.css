@@ -223,10 +223,35 @@ button {
   letter-spacing: 1px;
   font-size: 44px;
   color: #35fe09;
-  -webkit-text-stroke: 1px #bde1ff;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   font-weight: 600;
-  background: #2e2e2e;
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    linear-gradient(
+      45deg,
+      black 25%,
+      transparent 25%,
+      transparent 75%,
+      black 75%,
+      black
+    ),
+    linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
 }
 .logotype1 span {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
