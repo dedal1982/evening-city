@@ -161,7 +161,7 @@ button {
   width: 1000px;
   height: 200px;
   overflow: visible;
-  background-image: url(../images/worldmap.svg);
+  background-image: url(../images/worldmap-7.svg);
   background-repeat: no-repeat;
 }
 .globe-outer-shadow {
@@ -208,7 +208,7 @@ button {
   position: relative;
   display: inline-block;
   font-size: 36px;
-  color: #337ab7;
+  color: #35fe09;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
   font-family: "Russo One", sans-serif;
   font-weight: 300;
@@ -222,7 +222,7 @@ button {
 .logotype1 b {
   letter-spacing: 1px;
   font-size: 44px;
-  color: #1c84d0;
+  color: #35fe09;
   -webkit-text-stroke: 1px #bde1ff;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   font-weight: 600;
@@ -233,7 +233,7 @@ button {
   display: block;
   float: right;
   font-size: 20px;
-  color: #579ee6;
+  color: #35fe09;
   line-height: 6px;
 }
 .logotype1:before {
@@ -241,7 +241,7 @@ button {
   top: -12px;
   left: 0;
   content: "";
-  border: 8px solid #bde1ff;
+  border: 8px solid #35fe09;
   width: 66px;
   height: 66px;
   border-radius: 100%;
@@ -251,7 +251,7 @@ button {
 }
 .logotype1:hover:before {
   transform: scale(1.1);
-  border: 8px solid #1c84d0;
+  border: 8px solid #67fe09;
 }
 @media (max-width: 600px) {
   .logotype1,
